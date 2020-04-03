@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>EDGamifica</title>
+
+
+    <!-- Bootstrap core CSS -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
+
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="floating-labels.css" rel="stylesheet">
+    <script src="jquery-git.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="js/user.js"></script>
+
+  </head>
+  <body>
+  
+  <div class="modal fade" id="cadastrarUser" tabindex="-1" 
+  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cadastrar Usuário</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="cademail">
+          </div>
+          <div class="form-group">
+            <label class="col-form-label">Senha:</label>
+            <input type="password" class="form-control" id="cadpassword">
+          </div>
+		  <div class="form-group">
+            <label  class="col-form-label">Comfirme Senha:</label>
+            <input type="password" class="form-control" id="cadconfpassword">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="signup" type="button" class="btn btn-primary">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="form-signin">
+
+  <div class="form-label-group">
+    <input type="email" id="inputEmail" class="form-control" placeholder="email" required autofocus>
+    <label for="inputEmail">Email</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="password" id="inputPassword" class="form-control" placeholder="senha" required>
+    <label for="inputPassword">Senha</label>
+  </div>
+
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Lembrar-me
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit"  id="open">Entrar</button>
+  <button class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#cadastrarUser" data-whatever="@getbootstrap" >Cadastrar</button>
+  <p class="mt-5 mb-3 text-muted text-center">&copy; Manassés-2020</p>
+</div>
+</body>
+</html>
